@@ -179,7 +179,7 @@ function theEliminator(arr, str){
       // return console.log(newContestants)
     }
   }
-  }
+}
 // theEliminator(contestants, loser)
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -213,7 +213,7 @@ function emailCheck(email){
       return console.log('must provide a valid email address')
     }
 }
-emailCheck('   johnDoe1992@gmail.com   ')
+// emailCheck('   johnDoe1992@gmail.com   ')
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -245,22 +245,22 @@ function buyChocolate2(amnt) {
 // console.log(totalFrogs2)
 
 ////////////////// PROBLEM 15 ////////////////////
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+let sampleArray = [0,1,2,5,3,6,7,8,9]
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
 function isAcsending(arr){
-  let j = 0
   for (let i = 0; i < arr.length; i++){
-    j =+1 
-      if (arr[j] - arr[i] < 0){
-        return false
-      }
-  }return true
-}let arrayIsAscending = isAcsending(sampleArray)
-console.log(arrayIsAscending);
+    if(arr[i] > arr[i + 1]){
+      return false
+    }
+  }
+  return true
+}
+let arrayIsAcsending = isAcsending(sampleArray)
+console.log(arrayIsAcsending)
 ////////////////// PROBLEM 16 ////////////////////
 
 let duck = "cute";
